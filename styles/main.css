@@ -10,6 +10,28 @@ main img{
     height: 286px;
 
     object-fit: cover;
-
 }
 
+/* ===== MEDIA QUERIES PARA MOBILE 375x667 ===== */
+@media screen and (max-width: 375px) {
+    main {
+        gap: 12px; /* Reduz espaçamento entre imagens */
+        padding: 16px; /* Reduz padding geral */
+        justify-content: center; /* Centraliza o conteúdo */
+    }
+    
+    main img {
+        width: calc(50% - 6px); /* 2 colunas com gap de 12px */
+        height: 160px; /* Altura fixa menor para mobile */
+        border-radius: 8px; /* Adiciona bordas arredondadas */
+    }
+    
+    /* Alternativa: Se preferir 1 coluna, descomente as linhas abaixo */
+    /*
+    main img {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+    */
+}
