@@ -51,3 +51,19 @@ a:hover{
 .bg-surface-color{
     background-color: var(--surface-color);
 }
+
+/* ===== MEDIA QUERIES PARA MOBILE 375x667 ===== */
+@media screen and (max-width: 375px) {
+    :root {
+        /* Ajuste de fontes para mobile */
+        --text-lg: bold 24px/125% var(--font-family);
+        --text: 14px/150% var(--font-family);
+        --text-md: 12px/175% var(--font-family);
+        --text-sm: 11px/175% var(--font-family);
+    }
+    
+    .container {
+        padding-inline: 16px; /* Reduz padding lateral */
+        max-width: 375px;
+    }
+}
