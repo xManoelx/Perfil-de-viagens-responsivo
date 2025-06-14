@@ -21,3 +21,37 @@ nav ul li:last-child img{
     height: 40px;
     border-radius: 50%;
 }
+
+/* ===== MEDIA QUERIES PARA MOBILE 375x667 ===== */
+@media screen and (max-width: 375px) {
+    nav {
+        padding-block: 16px; /* Reduz padding vertical */
+    }
+    
+    nav ul {
+        gap: 16px; /* Reduz espaçamento entre itens */
+    }
+    
+    /* Oculta texto "Explorar" e "Minhas Viagens" no mobile */
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3) {
+        display: none;
+    }
+    
+    /* Mantém apenas ícones essenciais */
+    nav ul li:first-child,
+    nav ul li:last-child {
+        display: flex;
+    }
+    
+    nav ul li:last-child img {
+        width: 32px; /* Reduz tamanho da foto de perfil */
+        height: 32px;
+    }
+    
+    /* Ajusta logo se necessário */
+    #Logo img {
+        max-width: 120px;
+        height: auto;
+    }
+}

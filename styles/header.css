@@ -51,3 +51,70 @@ header .container {
     align-items: center;
     gap: 8px;
 }
+
+/* ===== MEDIA QUERIES PARA MOBILE 375x667 ===== */
+@media screen and (max-width: 375px) {
+    header {
+        padding-block: 24px; /* Reduz padding vertical */
+    }
+    
+    header .container {
+        flex-direction: column; /* Empilha elementos verticalmente */
+        gap: 24px;
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+    
+    #profile {
+        flex-direction: column; /* Empilha foto e texto */
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #profile img {
+        width: 120px; /* Reduz tamanho da foto */
+        height: 120px;
+    }
+    
+    #profile > div {
+        max-width: 100%; /* Remove limitação de largura */
+    }
+    
+    #profile h1 {
+        font-size: 20px; /* Reduz tamanho do nome */
+        margin-bottom: 8px;
+    }
+    
+    #profile p {
+        font-size: 12px; /* Reduz tamanho da descrição */
+        line-height: 1.4;
+        max-width: 300px; /* Limita largura do texto */
+    }
+    
+    #info {
+        flex-direction: row; /* Muda para horizontal */
+        justify-content: space-between;
+        width: 100%;
+        gap: 8px;
+        flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    }
+    
+    #info li {
+        flex-direction: column; /* Empilha ícone e texto */
+        text-align: center;
+        gap: 4px;
+        flex: 1; /* Distribui igualmente o espaço */
+        min-width: 80px; /* Largura mínima para cada item */
+    }
+    
+    #info li img {
+        width: 20px; /* Reduz tamanho dos ícones */
+        height: 20px;
+    }
+    
+    #info li span {
+        font-size: 11px; /* Reduz tamanho do texto */
+        line-height: 1.3;
+    }
+}
