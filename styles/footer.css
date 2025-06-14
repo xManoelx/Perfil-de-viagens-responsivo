@@ -9,3 +9,36 @@ footer{
 footer span:nth-child(1){
     margin-right: auto;
 }
+
+/* ===== MEDIA QUERIES PARA MOBILE 375x667 ===== */
+@media screen and (max-width: 375px) {
+    footer {
+        flex-direction: column; /* Empilha elementos verticalmente */
+        gap: 12px; /* Reduz espaçamento */
+        padding-block: 16px; /* Reduz padding vertical */
+        text-align: center; /* Centraliza texto */
+        font-size: 12px; /* Reduz tamanho da fonte */
+    }
+    
+    footer span:nth-child(1) {
+        margin-right: 0; /* Remove margem automática */
+    }
+    
+    /* Alternativa: Manter horizontal mas com fonte menor */
+    /*
+    footer {
+        gap: 16px;
+        padding-block: 16px;
+        font-size: 11px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer span:nth-child(1) {
+        margin-right: auto;
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    */
+}
